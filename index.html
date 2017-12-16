@@ -1,0 +1,55 @@
+<style>
+
+    .input {
+            width: 100%;
+    padding: 6px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+  body {
+    min-width:190;
+}      
+p {
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    }
+button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    outline: 0;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: white;
+    display: block;
+    font-family: montserrat,"helvetica neue",helvetica,arial,sans-serif;
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,.15) inset;
+    border-radius: 2px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    background-image: linear-gradient(to bottom,#333,#333);
+    background-position: 0;
+    min-width: 100px;
+    height: 50px;        
+        
+    }
+</style>
+
+<p>Made By Joshua N.</p>
+<p>Game pin you want to spam</p>
+<p id="gamepinError" style=" color: red; "></p>
+<input type="text" id="gamepin" class="input" placeholder="Game Pin" maxlength="7"><br>
+<p>Name of the bots <br> Example: Bot, Bot1, Bot2...</p> 
+<p>Bypass swear filter? <input type="checkbox" id="bypassSwear" style=" float: right; "></p> 
+<p id="botNameError" style=" color: red; "></p>
+<input type="text" id="names"  class="input" placeholder="Bot Prefix" maxlength="12"><br>
+<p>How many bots do you want? <br> Max: 250 bots <br> Recommended: < 100 bots</p>
+<p id="botNumberError" style=" color: red; "></p>
+<input type="number" id="numberOfBots"  class="input" placeholder="How many bots?" min="1" max="300" style=" width: 100%; "><br>
+<button type="button" id="kaspam">Send!</button>
+<button type="button" id="killAll">Remove bots</button>
+<script src="jquery-3.1.1.js"></script>
+<script src="popup.js"></script>

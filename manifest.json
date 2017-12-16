@@ -1,0 +1,35 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "name": "Kahoot Bot",
+  "version": "2.2.8",
+  "version_name": "2.2.8",
+  "author": "nubles123@gmail.com",
+  "description": "Flood Kahoot With Bots-Made By Josh",
+    "permissions": ["storage", "*://kahoot.it/*", "cookies"],
+  "background": {
+    "page": "background.html"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png",
+    "500": "images/icon500.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon19.png",
+      "38": "images/icon38.png"
+    },
+    "default_popup": "popup.html"
+  },
+
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "jquery-3.1.1.js", "script.js" ],
+      "matches": [ "*://kahoot.it/*" ],
+	   "run_at": "document_end"
+   } ]
+}

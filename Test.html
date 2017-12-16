@@ -1,0 +1,11 @@
+<script src="jquery-3.1.1.js"> </script>
+<script>
+
+    for (let i=1; i<20; i++) {
+    setTimeout( function timer(){
+    jQuery('body').append("<iframe src='https://kahoot.it/#/?" + i +"'> </iframe>")  
+            
+    }, i*2000 );
+
+}
+</script>
